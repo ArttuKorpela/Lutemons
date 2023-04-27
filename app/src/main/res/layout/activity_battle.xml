@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.BattleActivity">
+
+    <TextView
+        android:id="@+id/txtBattle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Megabyte did 5 damage with carbage collector"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgLutemonHome"
+        android:layout_width="256dp"
+        android:layout_height="332dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="248dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBattle"
+        app:srcCompat="@drawable/megabyte_2_0" />
+
+    <ImageView
+        android:id="@+id/imgLutemonAway"
+        android:layout_width="256dp"
+        android:layout_height="332dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBattle"
+        app:srcCompat="@drawable/megabyte_2_0" />
+
+    <TextView
+        android:id="@+id/txtHealthHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="280dp"
+        android:text="Health: 7/7"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtHealthAway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="50dp"
+        android:text="Health: 2/7"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAttack_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="5 damage"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAttack_rng"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnAttack_rng" />
+
+    <Button
+        android:id="@+id/btnAttack_rng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="5 or 7 damage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnAttack_set" />
+
+    <Button
+        android:id="@+id/btnDefense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="5 def"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAttack_rng"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.345"
+        app:layout_constraintStart_toEndOf="@+id/btnAttack_rng"
+        app:layout_constraintTop_toTopOf="@+id/btnAttack_rng" />
+
+    <ImageView
+        android:id="@+id/imgEffectHome"
+        android:layout_width="238dp"
+        android:layout_height="353dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="108dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/attak" />
+
+    <ImageView
+        android:id="@+id/imgEffectAway"
+        android:layout_width="235dp"
+        android:layout_height="433dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtBattle"
+        app:srcCompat="@drawable/attak" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

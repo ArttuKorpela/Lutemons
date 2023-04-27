@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentsLutemons.CreateNewLutemonFragment">
+
+    <EditText
+        android:id="@+id/editTextNickname"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:hint="Give a nickname"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgNewLutemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNickname">
+
+        <RadioButton
+            android:id="@+id/rbMegabyte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Megabyte" />
+
+        <RadioButton
+            android:id="@+id/rbAmpere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ampere" />
+
+        <RadioButton
+            android:id="@+id/rbDividend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dividend" />
+
+        <RadioButton
+            android:id="@+id/rbBussCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buss card" />
+
+        <RadioButton
+            android:id="@+id/rbMoped"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Moped" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imgCluster"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:src="@drawable/uusi_cluster"
+        app:layout_constraintStart_toEndOf="@+id/rgNewLutemon"
+        app:layout_constraintTop_toTopOf="@+id/rgNewLutemon" />
+
+    <ImageView
+        android:id="@+id/imgPelletti"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/pelletti"
+        app:layout_constraintEnd_toEndOf="@+id/imgEnklaavi"
+        app:layout_constraintStart_toStartOf="@+id/imgEnklaavi"
+        app:layout_constraintTop_toBottomOf="@+id/imgEnklaavi" />
+
+    <ImageView
+        android:id="@+id/imgEnklaavi"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/enklaavi"
+        app:layout_constraintEnd_toEndOf="@+id/imgSatky"
+        app:layout_constraintStart_toStartOf="@+id/imgSatky"
+        app:layout_constraintTop_toBottomOf="@+id/imgSatky" />
+
+    <ImageView
+        android:id="@+id/imgKrk"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/krk"
+        app:layout_constraintBottom_toBottomOf="@+id/rgNewLutemon"
+        app:layout_constraintEnd_toEndOf="@+id/imgPelletti"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgPelletti"
+        app:layout_constraintTop_toBottomOf="@+id/imgPelletti"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imgSatky"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:src="@drawable/s_tky"
+        app:layout_constraintEnd_toEndOf="@+id/imgCluster"
+        app:layout_constraintStart_toStartOf="@+id/imgCluster"
+        app:layout_constraintTop_toBottomOf="@+id/imgCluster" />
+
+    <Button
+        android:id="@+id/btnNewLutemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/kela_small"
+        android:text="100 - Genereate a lutemon"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgNewLutemon" />
+
+    <TextView
+        android:id="@+id/textViewKelaBucks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/kela_small"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewKelaBucks"
+        app:layout_constraintEnd_toStartOf="@+id/textViewKelaBucks"
+        app:layout_constraintTop_toTopOf="@+id/textViewKelaBucks" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
