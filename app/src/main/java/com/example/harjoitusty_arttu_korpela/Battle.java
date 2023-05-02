@@ -79,11 +79,11 @@ public class Battle {
         enemiesRare.add(new Sportbike("Ada"));
 
         ArrayList<Lutemon> enemiesEpic = new ArrayList<>();
-        enemiesRare.add(new Terabyte("Vihtori"));
-        enemiesRare.add(new Tesla("Iisakki"));
-        enemiesRare.add(new Option("Taavetti"));
-        enemiesRare.add(new MiniReactor("Ilmari"));
-        enemiesRare.add(new Superbike("Eero"));
+        enemiesEpic.add(new Terabyte("Vihtori"));
+        enemiesEpic.add(new Tesla("Iisakki"));
+        enemiesEpic.add(new Option("Taavetti"));
+        enemiesEpic.add(new MiniReactor("Ilmari"));
+        enemiesEpic.add(new Superbike("Eero"));
 
 
 
